@@ -1,0 +1,334 @@
+﻿body {
+    background-color: rgba(175,175,175,0.3);
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+hr {
+    width: 0%;
+    float: left;
+}
+@keyframes opacity {
+    0% {opacity: 1;}
+    12.5% {opacity: 0.9;}
+    25% {opacity: 0.8;}
+    37.5% {opacity: 0.7;}
+    50% {opacity: 0.6;}
+    62.5% {opacity: 0.5;}
+    75% {opacity: 0.4;}
+    87.5% {opacity: 0.3;}
+    100% {opacity: 0.2;}
+}
+@keyframes opacity1 {
+    0% {opacity: 0.2;}
+    12.5% {opacity: 0.3;}
+    25% {opacity: 0.4;}
+    37.5% {opacity: 0.5;}
+    50% {opacity: 0.6;}
+    62.5% {opacity: 0.7;}
+    75% {opacity: 0.8;}
+    87.5% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+@keyframes ruota {
+    0% {transform: rotate(0deg)}
+    20% {transform: rotate(18deg)}
+    40% {transform: rotate(36deg)}
+    60% {transform: rotate(54deg)}
+    80% {transform: rotate(72deg)}
+    100% {transform: rotate(90deg)}
+}
+.menu.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    float: left;
+}
+.menu.icon:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    float: left;
+}
+.menu.icon:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+    float: left;
+    }
+.menu.icon {
+    margin-top: 0.5%;
+    text-align: center;
+    margin-left: -1px;
+    position: absolute;
+}
+#box {
+    border: 2px rgb(0,0,0) solid;
+    border-radius: 0;
+}
+.menus {
+    display: none;
+    list-style: none;
+}
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    #sfondo {
+        width: 50%;
+        display: block;
+        height: 105px;
+        margin-left: 25%;
+        animation: opacity 3s ;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    #scritta {
+        font-size: 2em;
+        font-weight: bold;
+        float: left;
+        margin-top: -10%;
+        margin-left: 40%;
+        text-align: center;
+        animation: opacity 3s ;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+    }
+    .menu.icon:active {
+        animation: ruota 1s step-start;
+    }
+    .menu.icon {
+        margin-top: 1.7%
+    }
+    #box {
+        width: 18px;
+        height: 24px;
+        border-left: 1px rgba(175,175,175,0.3) solid;
+        border-right: 1px rgba(175,175,175,0.3) solid;
+        border-top: 1px rgba(175,175,175,0.3) solid;
+        border-bottom: 1px rgba(175,175,175,0.3) solid;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+        margin-top: -20%;
+    }
+    .li {
+        font-size: 1em;
+        border: 2px rgba(200, 200, 200, 0.5) solid;
+        background-color: rgba(200,200,200,0.3);
+    }
+
+        .li:hover {
+            background-color: rgba(200,200,200, 1);
+            font-size: 1.2em;
+        }
+    #chi {
+        width: 10%;
+        margin-top: -16%;
+    }
+    #cosa {
+        width: 14%;
+        margin-top: -12%;
+        float: left;
+        margin-left: -20.5%
+    }
+    #mezzi {
+        width: 14%;
+        margin-top: -7%;
+        margin-left: -20.5%;
+        float: left;
+    }
+    #ph {
+        width: 20%;
+        margin-top: -1.7%;
+        float: left;
+    }
+    .logo {
+        float: right;
+        width: 10%;
+        height: 5%;
+    }
+    a {
+    }
+
+        a:link, a:visited {
+            color: rgb(255,255,255);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgba(150, 150, 150, 0.5);
+        }
+}
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+    #sfondo {
+        width: 50%;
+        display: block;
+        height: 144px;
+        margin-left: 25%;
+        animation: opacity 3s infinite
+    }
+    #scritta {
+        font-size: 3em;
+        font-weight: bold;
+        float: left;
+        margin-top: -9%;
+        margin-left: 42%;
+        text-align: center;
+        animation: opacity1 3s infinite;
+    }
+    .logo {
+        float: right;
+        width: 10%;
+        height: 5%;
+    }
+    .menu.icon:active {
+        animation: ruota 1s step-start;
+    }
+    #box {
+        width: 18px;
+        height: 24px;
+        border-left: 1px rgba(0,0,0,0.4) solid;
+        border-right: 1px rgba(0,0,0,0.4) solid;
+        border-top: 1px rgba(0,0,0,0.4) solid;
+        border-bottom: 1px rgba(0,0,0,0.4) solid;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+        margin-top: -20%;
+    }
+    .li {
+        font-size: 1em;
+        border: 2px rgba(200, 200, 200, 0.5) solid;
+        background-color: rgba(200,200,200,0.3);
+    }
+        .li:hover {
+            background-color: rgba(200,200,200, 1);
+            font-size: 1.2em;
+        }
+    #chi {
+        width: 10%;
+        margin-top: -16%;
+    }
+    #cosa {
+        width: 14%;
+        margin-top: -12%;
+        float: left;
+        margin-left: -20.5%
+    }
+    #mezzi {
+        width: 14%;
+        margin-top: -7%;
+        margin-left: -20.5%;
+        float: left;
+    }
+    #ph {
+        width: 20%;
+        margin-top: -1.7%;
+        float: left;
+    }
+
+}
+@media screen and (min-width: 1101px) and (max-width: 1920px) {
+    #sfondo {
+        width: 50%;
+        display: block;
+        height: 252px;
+        margin-left: 25%;
+        animation: opacity 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    #scritta {
+        font-size: 4em;
+        font-weight: bold;
+        float: left;
+        margin-top: -9%;
+        margin-left: 43%;
+        text-align: center;
+        animation: opacity1 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .menu.icon:active {
+        animation: ruota 1s step-start;
+    }
+    #box {
+        width: 18px;
+        height: 20px;
+        border-left: 1px rgba(175,175,175,0.0) solid;
+        border-right: 1px rgba(175,175,175,0.0) solid;
+        border-top: 1px rgba(175,175,175,0.0) solid;
+        border-bottom: 1px rgba(175,175,175,0.0) solid;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+        margin-top: -13%;
+    }
+    .li {
+        font-size: 3em;
+        border: 2px rgba(200, 200, 200, 0.5) solid;
+        background-color: rgba(200,200,200,0.3);
+    }
+    .li:hover {
+        background-color: rgba(200,200,200, 1);
+        font-size: 3.2em;
+    }
+    #chi {
+        width: 8%;
+        margin-top: -5%;
+    }
+    #cosa {
+        width: 11%;
+        margin-top: -5%
+    }
+    #mezzi {
+        width: 11%;
+        margin-top: -6%;
+    }
+    #ph {
+        width: 15%;
+        margin-top: -3.7%;
+        float: left;
+    }
+    .logo {
+        float: right;
+        width: 10%;
+        height: 5%;
+    }
+    a{
+    }
+        a:link, a:visited{
+            color: rgb(255,255,255);
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgba(150, 150, 150, 0.5);
+        }
+}
+@media screen and (min-width: 1921px) and (max-width: 4060px) {
+    #sfondo{
+        width: 50%;
+        display: block;
+        height: 339px;
+        margin-left: 25%;
+        animation: opacity 3s infinite;
+     }
+     #scritta {
+        font-size: 5em;
+        font-weight: bold;
+        float: left;
+        margin-top: -9%;
+        margin-left: 43%;
+        text-align: center;
+        animation: opacity1 3s infinite;
+     }
+}
