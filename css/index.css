@@ -81,7 +81,7 @@ hr {
     display: none;
     list-style: none;
 }
-@media screen and (min-width: 400px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 800px) {
     #sfondo {
         width: 50%;
         display: block;
@@ -106,7 +106,7 @@ hr {
         animation: ruota 1s step-start;
     }
     .menu.icon {
-        margin-top: 1.7%
+        margin-top: 1.7%;   
     }
     #box {
         width: 18px;
@@ -118,7 +118,7 @@ hr {
         padding-left: 10px;
         padding-right: 10px;
         float: left;
-        margin-top: -20%;
+        margin-top: -13%;
     }
     .li {
         font-size: 1em;
@@ -190,6 +190,10 @@ hr {
         width: 10%;
         height: 5%;
     }
+    .menu.icon{
+        margin-top: 28%;
+        float: left;
+    }
     .menu.icon:active {
         animation: ruota 1s step-start;
     }
@@ -203,7 +207,8 @@ hr {
         padding-left: 10px;
         padding-right: 10px;
         float: left;
-        margin-top: -20%;
+        margin-top: -12%;
+        position: relative;
     }
     .li {
         font-size: 1em;
