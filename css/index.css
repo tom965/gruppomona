@@ -214,33 +214,40 @@ hr {
         font-size: 1em;
         border: 2px rgba(200, 200, 200, 0.5) solid;
         background-color: rgba(200,200,200,0.3);
+        color: 
     }
         .li:hover {
             background-color: rgba(200,200,200, 1);
             font-size: 1.2em;
         }
     #chi {
-        width: 10%;
-        margin-top: -16%;
+        width: 6%;
+        margin-top: -8%;
     }
     #cosa {
-        width: 14%;
-        margin-top: -12%;
+        width: 8%;
+        margin-top: -6%;
         float: left;
-        margin-left: -20.5%
+        margin-left: 0%
     }
     #mezzi {
-        width: 14%;
-        margin-top: -7%;
-        margin-left: -20.5%;
+        width: 7%;
+        margin-top: -4%;
+        margin-left: 0%;
         float: left;
     }
     #ph {
-        width: 20%;
+        width: 10%;
         margin-top: -1.7%;
         float: left;
     }
-
+    a:link, a:visited {
+        color: rgb(255,255,255);
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgba(150, 150, 150, 0.5);
+    }
 }
 @media screen and (min-width: 1101px) and (max-width: 1920px) {
     #sfondo {
