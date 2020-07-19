@@ -4,8 +4,7 @@
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 hr {
-    width: 0%;
-    float: left;
+
 }
 @keyframes opacity {
     0% {opacity: 1;}
@@ -37,49 +36,21 @@ hr {
     80% {transform: rotate(72deg)}
     100% {transform: rotate(90deg)}
 }
-.menu.icon {
-    color: #000;
-    position: absolute;
-    margin-left: 2px;
-    margin-top: 10px;
-    width: 17px;
-    height: 1px;
-    background-color: currentColor;
-    float: left;
-}
-.menu.icon:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 17px;
-    height: 1px;
-    background-color: currentColor;
-    float: left;
-}
-.menu.icon:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 17px;
-    height: 1px;
-    background-color: currentColor;
-    float: left;
-    }
-.menu.icon {
-    margin-top: 0.5%;
-    text-align: center;
-    margin-left: -1px;
-    position: absolute;
-}
 #box {
     border: 2px rgb(0,0,0) solid;
     border-radius: 0;
 }
 .menus {
-    display: none;
+    display: inline;
     list-style: none;
+    margin-left: -5%;
+}
+.subtitle{
+    font-size: 2em;
+    font-weight: bold;
+}
+.block{
+    border: rgba(200, 200, 200, 0.5) solid 2px;
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {
     #sfondo {
@@ -200,10 +171,10 @@ hr {
     #box {
         width: 18px;
         height: 24px;
-        border-left: 1px rgba(0,0,0,0.4) solid;
-        border-right: 1px rgba(0,0,0,0.4) solid;
-        border-top: 1px rgba(0,0,0,0.4) solid;
-        border-bottom: 1px rgba(0,0,0,0.4) solid;
+        border-left: 1px rgba(175,175,175,0.3) solid;
+        border-right: 1px rgba(175,175,175,0.3) solid;
+        border-top: 1px rgba(175,175,175,0.3) solid;
+        border-bottom: 1px rgba(175,175,175,0.3) solid;
         padding-left: 10px;
         padding-right: 10px;
         float: left;
@@ -268,7 +239,7 @@ hr {
         text-align: center;
         animation: opacity1 3s;
         animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards;    
     }
     .menu.icon:active {
         animation: ruota 1s step-start;
@@ -286,30 +257,33 @@ hr {
         margin-top: -13%;
     }
     .li {
-        font-size: 3em;
+        font-size: 2em;
         border: 2px rgba(200, 200, 200, 0.5) solid;
         background-color: rgba(200,200,200,0.3);
+        display: inline;
+        
     }
     .li:hover {
         background-color: rgba(200,200,200, 1);
-        font-size: 3.2em;
+        font-size: 2.2em;
+    }
+    .big.list{
+        border: 2px rgba(175,175,175,0.3) solid;
+        padding: 5px;
+        width: 29%;
+        background-color: rgba(175,175,175,0.3);
     }
     #chi {
-        width: 8%;
-        margin-top: -5%;
+        width: 5%;      
     }
     #cosa {
-        width: 11%;
-        margin-top: -5%
+        width: 8%;        
     }
     #mezzi {
-        width: 11%;
-        margin-top: -6%;
+        width: 7%;        
     }
     #ph {
-        width: 15%;
-        margin-top: -3.7%;
-        float: left;
+        width: 10%;      
     }
     .logo {
         float: right;
@@ -325,6 +299,64 @@ hr {
         a:hover {
             color: rgba(150, 150, 150, 0.5);
         }
+    #line1{
+        color: rgba(200, 200, 200, 0.5);
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #sub1{
+        margin-left: 0%;
+        margin-top: 3%;
+        border-color: rgba(200, 200, 200, 0.5);
+        border-style: solid;
+        border-width: 2px;
+        background-color: rgba(175,175,175,0.4)
+    }
+    .block {
+        width: 300px;
+        height: 300px;
+        font-size: 1.5em;
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 3%;
+        font-size: 2em;
+        font-weight: bold;
+        position: relative;
+        text-align: right; 
+        opacity: 0.5;
+    }
+        .block:hover{
+            transition-duration: 250ms;
+            opacity: 1;
+        }
+    .blockTitle {  
+        position: absolute;
+        margin-left: -40%;
+        margin-top: 70%;
+    }
+    #blo1 {
+        background-image: url("../img/casa.jpeg");     
+        color: rgba(200,200,200,1);
+    }
+    #blo2 {
+        background-image: url("../img/assi.jpeg");
+        color: rgba(200,200,200,1);
+    }
+    #blo3{
+        background-image: url("../img/bancali.jpeg");
+        color: rgba(200,200,200, 1);
+    }
+    .credits{
+        position: fixed;
+        float: left;
+        text-align: center;
+        height: 3%;
+        margin-top: 9%;
+        margin-left: -1%;
+        background-color: rgba(200,200,200, 1);
+        width: 101%;
+    }
 }
 @media screen and (min-width: 1921px) and (max-width: 4060px) {
     #sfondo{
